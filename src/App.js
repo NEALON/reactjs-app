@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
-// import "./styles/App.css";
-// import { Button } from 'react-bootstrap';
-// import logo from './logo.svg';
+import React from 'react';
+import { Route } from 'react-router-dom'
+import HomePage from './components/pages/HomePage'
+import LoginPage from './components/pages/LoginPage'
 
-const App = () => {
-  return <div>Hello World</div>
-}
+const App = () => (
+  <div>
+    <Route exact path='/' component={HomePage}/>
+    <Route exact path='/login' component={LoginPage}/>
+  </div>
+)
 
 export default App;
