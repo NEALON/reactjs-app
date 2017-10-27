@@ -22,3 +22,7 @@ yarn-error.log*
 
 # css files
 /src/styles/*css
+
+# .env
+.env.production
+.env.development
